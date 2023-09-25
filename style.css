@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+.btn_primary {
+    padding: 0.5rem 1.5rem;
+
+    background-color: white;
+    color: black;
+
+    border-radius: 0.5rem;
+
+    transition: all 0.2s ease-out;
+}
+.btn_primary:hover {
+    background-color: red;
+    color: white;
+}
+.btn_outline {
+    padding: 0.25rem 1.25rem;
+
+    border: 3px solid white;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-out;
+}
+.btn_outline:hover {
+    border: 3px solid red;
+    color: red;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'Raleway';
+    background-color: white;
+    color: black;
+}
+
+main {
+    width: 100%;
+    /* max-width: 1440px; */
+    /* padding: 0 2rem; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    padding: 1rem 4rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    backdrop-filter: blur(2rem);
+}
+
+.nav_logo{
+    margin: 0rem 4rem;
+    width: 150px;
+    height: auto;
+}
+
+.nav_menus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.nav_menu {
+    transition: color 0.2s ease-out;
+    font-size: large;
+}
+
+.nav_menu:hover {
+    color: red;
+}
+
+.nav_button{
+    display: flex;
+    align-items: center;
+    margin: 0rem 4rem;
+    gap: 2rem;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_contents{
+    max-width: 36rem;
+    margin: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.home_contents > h1{
+    font-size: 4rem;
+    color: black;
+    margin: 0px;
+}
+
+.home_img {
+    width: 50%;
+    height: 80%;
+    /* align-self: flex-end; */
+}
+
+.home_img > img{
+    width: 500px;
+    height: auto;
+    margin-top: 4rem;
+}
+
+.home_btn{
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+
+    display: block;
+    border: 2px solid red;
+    border-radius: 0.25rem;
+
+    background-color: red;
+    color: white;
+
+    transition: all 0.25s ease-out;
+}
+
+.home_btn:hover {
+    background-color: whitesmoke;
+    color: darkslategray;
+}
+
+.menu {
+    padding: 6rem 2rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 3fr));
+    gap: 2rem;
+    
+    background-color: black;
+    color: white;
+}
+
+.menu > article {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+
+    box-shadow: 0 0 0.5rem 0.125rem lightgray;
+}
+
+.menu-card_img {
+    width: 100%;
+    flex-grow: 1;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.menu-card_img > img {
+    width: 416px;
+    height: 280px;
+    object-fit: cover;
+
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.menu-card_content {
+    padding: 1rem 2rem;
+}
+
+.menu-card_content > p {
+    margin-top: 0.5rem;
+    text-align: justify;
+}
+
+.menu-card_cta {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.5rem 0rem;
+
+    display: block;
+    border: 2px solid red;
+    border-radius: 0.25rem;
+
+    text-align: center;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+
+    transition: all 0.25s ease-out;
+}
+
+.menu-card_cta:hover {
+    background-color: whitesmoke;
+    color: darkslategray;
+}
+
+footer {
+    width: 100%;
+    /* padding: 0rem 4  rem; */
+    margin: 2rem 0rem;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0rem;
+    margin: 0rem 2rem;
+}
+
+.footer_title{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.footer_logo {
+    width: 300PX;
+    height: auto;
+    border: 50px solid black;
+    border-radius: 2rem;
+    background-color: black;   
+}

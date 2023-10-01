@@ -92,7 +92,7 @@ nav{
     display: flex;  
     justify-content:center;
 
-    background-image: url('prewed.png');
+    background-image: url('img/prewed.png');
     background-size: 100% auto;
 }
 
@@ -158,7 +158,7 @@ nav{
     /* justify-content: flex-end; */
 
     color: var(--color-secondary);
-    background-image: url('prewed2_1.png');
+    background-image: url('img/prewed2_1.png');
     background-size: 100% auto;
 }
 
